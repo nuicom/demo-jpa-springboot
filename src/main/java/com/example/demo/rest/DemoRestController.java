@@ -1,6 +1,5 @@
 package com.example.demo.rest;
 
-import com.example.demo.model.entity.FwUserEntity;
 import com.example.demo.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,8 +18,8 @@ public class DemoRestController {
         return "spring Demo" + demoService.findUserById().getClass().getName();
     }
 
-    @GetMapping(path = "/getUser")
-    public FwUserEntity getUser() throws Exception {
-        return demoService.findFwUserById();
-    }
+//    @GetMapping(path = "/getUser")
+//    public FwUserEntity getUser() throws Exception {
+//        return demoService.findFwUserById();
+//    }
 }

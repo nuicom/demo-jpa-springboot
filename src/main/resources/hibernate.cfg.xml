@@ -9,6 +9,7 @@
     <property name="hibernate.dialect">org.hibernate.dialect.Oracle9iDialect</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.format_sql">true</property>
-    <mapping class="com.example.demo.model.entity.FwUserEntity"/>
+    <mapping class="com.example.demo.model.entity.FwUserSecurityEntity"/>
+    <mapping class="com.example.demo.model.entity.FwUserTokenEntity"/>
   </session-factory>
 </hibernate-configuration>
